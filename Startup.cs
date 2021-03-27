@@ -35,13 +35,14 @@ namespace RestAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestAPI", Version = "v1" });
             });
+
             services.Configure<TestDatabaseSettings>(
                     Configuration.GetSection(nameof(TestDatabaseSettings)));
 
             services.AddSingleton<ITestDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<TestDatabaseSettings>>().Value);
+                
             services.AddSingleton<UserService>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
