@@ -2,7 +2,7 @@
 
 ## Description:
 
-This is an example of a basic Rest API using MongoDB on the backend. Will implement OAuth2 next. Here at are the steps taken.
+This is an example of a basic Rest API using MongoDB on the backend. Will implement OAuth2 next. Here are the steps I've taken.
 
 ## Directions
 
